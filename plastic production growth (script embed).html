@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Visualization</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
+            min-height: 100vh;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 1200px;
+            width: 100%;
+            padding: 40px;
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 2em;
+        }
+        
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+        }
+        
+        .viz-wrapper {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        
+        iframe {
+            border-radius: 4px;
+        }
+        
+        .flourish-credit {
+            margin-top: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 1.5em;
+            }
+            
+            .subtitle {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Data Visualization</h1>
+        <p class="subtitle">Interactive Sankey Diagram</p>
+        
+        <div class="viz-wrapper">
+            <iframe src='https://flo.uri.sh/visualisation/26441990/embed' 
+                    title='Interactive or visual content' 
+                    class='flourish-embed-iframe' 
+                    frameborder='0' 
+                    scrolling='no' 
+                    style='width:100%;height:600px;' 
+                    sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'>
+            </iframe>
+            <div style='width:100%;margin-top:4px;text-align:right;'>
+                <a class='flourish-credit' 
+                   href='https://public.flourish.studio/visualisation/26441990/?utm_source=embed&utm_campaign=visualisation/26441990' 
+                   target='_top' 
+                   style='text-decoration:none;'>
+                    <img alt='Made with Flourish' 
+                         src='https://public.flourish.studio/resources/made_with_flourish.svg' 
+                         style='width:105px;height:16px;border:none;margin:0;'>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
